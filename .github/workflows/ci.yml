@@ -7,7 +7,7 @@ on:
       - 'main'
 
 jobs:
-  GOGO_Frontend_CI:
+  Gwangsan_Frontend_CI:
     runs-on: ubuntu-latest
 
     strategy:
@@ -47,7 +47,7 @@ jobs:
           status: ${{ job.status }}
           content: "<@${{ secrets.ID1 }}> <@${{ secrets.ID2 }}> <@${{ secrets.ID3 }}>\n확인해주세요."
           username:  Frontend CI bot
-          url: 'https://github.com/team-gogo/GOGO-Frontend'
+          url: 'https://github.com/School-of-Company/Gwangsan-Client'
           color: 4CAF50
 
       - name: Failure notification to discord
@@ -60,5 +60,5 @@ jobs:
           content: '안돼 안바꿔줘 돌아가'
           status: ${{ job.status }}
           username:  Frontend CI bot
-          url: 'https://github.com/team-gogo/GOGO-Frontend'
+          url: 'https://github.com/School-of-Company/Gwangsan-Client'
           color: e74c3c
